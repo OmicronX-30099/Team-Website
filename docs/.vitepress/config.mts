@@ -8,7 +8,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'About', link: '/about' },
-      { text: 'Guide', link: '/guide/installation_guide'}
+      { text: 'Guide', link: '/guide/installation'}
     ],
 
     search: {
