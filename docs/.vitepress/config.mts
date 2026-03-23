@@ -1,8 +1,10 @@
-export default {
+import { defineConfig } from 'vitepress'
+
+export default defineConfig({
   title: "ApexPathing Docs",
   description: 'ApexPathing Docs',
-  base: '/Supernova-Docs/', // Add this line!
+  base: '/Supernova-Docs/',
   themeConfig: {
-    nav: [{ text: 'Home', link: '/test.md' }]
+    nav: [{ text: 'Home', link: '/test' }]
   }
-}
+})
