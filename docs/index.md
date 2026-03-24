@@ -70,23 +70,23 @@ hero:
     <div id="right-side">
       <div id="contain">
 ```java
-path = follower.pathBuilder()
-          .addPath(
-            new BezierLine(scorePose, pickupPose)
-          )
-          .setLinearHeadingInterpolation(
-            scorePose.getHeading(),
-            pickupPose.getHeading()
-          )
-          .addPath(
-            new BezierLine(pickupPose, scorePose)
-          )
-          .setLinearHeadingInterpolation(
-            pickupPose.getHeading(),
-            scorePose.getHeading()
-          )
-          .build();
-        follower.followPath(path);
+Path path = follower.pathBuilder()
+    .addPath(
+        new BezierLine(scorePose, pickupPose)
+    )
+    .setLinearHeadingInterpolation(
+        scorePose.getHeading(),
+        pickupPose.getHeading()
+    )
+    .addPath(
+        new BezierLine(pickupPose, scorePose)
+    )
+    .setLinearHeadingInterpolation(
+        pickupPose.getHeading(),
+        scorePose.getHeading()
+    )
+    .build();
+follower.followPath(path);
 ```
       </div>
     </div>
