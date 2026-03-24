@@ -25,4 +25,17 @@ export default defineConfig({
     }
   },
   appearance: 'force-dark',
+  markdown: {
+    config: (md) => {
+      md.use(container, 'card', {
+        render(tokens, idx) {
+          if (tokens[idx].nesting === 1) {
+            return `<div class="next-card">`;
+          } else {
+            return `</div>`;
+          }
+        }
+      })
+    }
+  }
 })
