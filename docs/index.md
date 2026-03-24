@@ -53,19 +53,20 @@ hero:
   <p>Insert information here</p>
 </div>
 
-<div id="flex-box-grid" class="idk-container">
-  <div id="left-side">
-    <div id="contain">
-      <h1> Left </h1>
+<div id="content-holder-long" class="information-container">
+  <div id="flex-box-grid" class="idk-container">
+    <div id="left-side">
+      <div id="contain">
+        <h1> Left </h1>
+      </div>
     </div>
-  </div>
-  <div id="right-side">
-    <div id="contain">
-      <h1> Right </h1>
+    <div id="right-side">
+      <div id="contain">
+        <h1> Right </h1>
+      </div>
     </div>
   </div>
 </div>
-
 
 <style>
    #flex-box-grid {
