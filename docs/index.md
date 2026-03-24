@@ -69,7 +69,35 @@ hero:
 </div>
 <div id="right-side">
 <div id="contain">
-        
+
+:::tabs key:code
+== kotlin
+
+An example piece of a path written using ApexPathing
+
+```kotlin
+val path = follower.pathBuilder()
+    .addPath(
+        BezierLine(scorePose, pickupPose)
+    )
+    .setLinearHeadingInterpolation(
+        scorePose.heading(),
+        pickupPose.heading()
+    )
+    .addPath(
+        BezierLine(pickupPose, scorePose)
+    )
+    .setLinearHeadingInterpolation(
+        pickupPose.heading,
+        scorePose.heading
+    )
+    .build()
+```
+
+== java
+
+An example piece of a path written using ApexPathing
+      
 ```java
 Path path = follower.pathBuilder()
     .addPath(
@@ -89,6 +117,8 @@ Path path = follower.pathBuilder()
     .build();
 follower.followPath(path);
 ```
+
+:::
         
 </div>
 </div>
