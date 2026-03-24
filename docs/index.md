@@ -8,16 +8,17 @@ hero:
     - theme: brand
       text: Get Started
       link: /about
-  image:
-    src: /images/apex_logo.png
-    alt: ApexPathing Logo
+  # image:
+  #   src: /images/apex_logo.png
+  #   alt: ApexPathing Logo
 ---
 
 <div id="content-holder-long" class="body-style">
   <div id="flex-box-grid" data-role="flex-hoverable" class="body-style">
     <div>
-      <h1>This is an example</h1>
-      <h3>This is an example</h3>
+      <img src="/images/apex_logo.png" width="50" height="20" alt="ApexPathing Logo">
+      <h1>Quintic Hermetic Splines</h1>
+      <h3>We use Quintic Hermetic Splines to do yada yada</h3>
     </div>
     <div>
         <h1>This is an example</h1>
