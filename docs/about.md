@@ -4,7 +4,7 @@ next:
   link: '/guide/installation'
 ---
 
-# Our Story { .gradient-title-page
+# Our Story { .gradient-title-page }
 
 ---
 # What Do Our Goals look like?
