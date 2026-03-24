@@ -88,6 +88,7 @@ val path = follower.pathBuilder()
         scorePose.heading
     )
     .build()
+follower.followPath(path);
 ```
       
 ```java [Java]
