@@ -21,6 +21,4 @@ The localization test allows you to preview your robot's localization system by 
 Run this test **before** any other tuner. If something is off, every other tuner will produce bad results.
 :::
 
-<style>
-.custom-block.info .custom-block-title
-</style>
+=
