@@ -115,8 +115,4 @@ hero:
       border-radius: 8px;
       margin-top: 20px;
    }
-
-   #container #image-container {
-    transform: translate(0px);
-   }
 </style>
