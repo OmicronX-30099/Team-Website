@@ -72,7 +72,7 @@ hero:
 <CodeBlock description="An example piece of code using ApexPathing: Quick, Concise, and easy-to-use">
 
 ::: code-group
-```kotlin [Kotlin {An example piece of code using ApexPathing: Quick, Concise, and easy-to-use}]
+```kotlin [Kotlin]
 val path = follower.pathBuilder()
     .addPath(
         BezierLine(scorePose, pickupPose)
