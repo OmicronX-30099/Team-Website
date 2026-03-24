@@ -69,7 +69,8 @@ hero:
 </div>
 <div id="right-side">
 <div id="contain">
-<CodeBlock description="An example piece of code using ApexPathing: Quick, Concise, and easy-to-use">
+
+::: card
 
 ::: code-group
 ```kotlin [Kotlin]
@@ -114,7 +115,11 @@ follower.followPath(path);
 
 :::
 
-</CodeBlock>
+<div class="card-text">
+This is exactly how <code>NextFTC</code> does it.
+</div>
+
+:::
         
 </div>
 </div>
@@ -154,7 +159,43 @@ follower.followPath(path);
       transform: rotate(-2.5deg);
       background-color: black;
   }
-   
+  .next-card {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 24px 0;
+  background-color: var(--vp-code-block-bg);
+}
+
+/* Row 1: The Tabs */
+.next-card :deep(.tabs) {
+  grid-row: 1;
+  border-bottom: 1px solid var(--vp-c-divider) !important;
+}
+
+/* Row 2: Your Description */
+.next-card .card-text {
+  grid-row: 2;
+  padding: 12px 16px;
+  background-color: var(--vp-c-bg-soft);
+  border-bottom: 1px solid var(--vp-c-divider);
+  font-size: 0.9em;
+  color: var(--vp-c-text-1);
+}
+
+/* Row 3: The Code Block */
+.next-card :deep(div[class*='language-']) {
+  grid-row: 3;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Clean up internal VitePress margins */
+.next-card :deep(.vp-code-group) {
+  display: contents !important; /* This lets tabs/code use the parent grid */
+}
 
    /* #content-holder-long {
       padding: 20px; 
