@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import container from 'markdown-it-container'
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import guide from "./sidebar/guide.mts";
 
 export default defineConfig({
@@ -27,16 +27,8 @@ export default defineConfig({
   },
   appearance: 'force-dark',
   markdown: {
-    config: (md) => {
-      md.use(container, 'card', {
-        render(tokens, idx) {
-          if (tokens[idx].nesting === 1) {
-            return `<div class="next-card">`;
-          } else {
-            return `</div>`;
-          }
-        }
-      })
-    }
-  }
+    config(md) {
+      md.use(tabsMarkdownPlugin)
+    },
+  },
 })
