@@ -27,6 +27,8 @@ We'd like to take a moment to thank them here:
 * 27621 - Heron - Alumni
 * 23571 - JEdison Knights - Alumni
 * 14708 - Short Circuits
+* 31663 - RSR Cuttlefish
+* 6183-Triple Paradox
 * 25957 - Quantum Igniters
 * and more...
 
