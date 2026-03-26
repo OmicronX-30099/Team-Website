@@ -1,6 +1,8 @@
 # Localization Test
 
-The localization test allows you to preview your robot's localization system by verifying motor directions, encoder directions, and odometry pod configuration. You drive the robot around the field and compare your actual position to the coordinates reported by the localizer.
+The localization test allows you to preview your robot's localization system by verifying motor
+directions, encoder directions, and odometry pod configuration. You drive the robot around the
+field and compare your actual position to the coordinates reported by the localizer.
 
 ## What Does Localization Test Do?
 
