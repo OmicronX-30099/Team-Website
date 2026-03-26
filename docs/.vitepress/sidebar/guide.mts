@@ -5,8 +5,8 @@ export default [
     {
         text: "Tuning",
         items: [
-            { text: "Velocity Tuners", link: "/guide/velocity" },
             { text: "Localization Test", link: "/guide/localization-test" },
+            { text: "Velocity Tuners", link: "/guide/velocity" },
             { text: "FeedForward Tuner", link: "/guide/feedforward-tuner" },
             { text: "Current Limiting Test", link: "/guide/current-limiting-test" },
             { text: "Forward Deceleration Tuner", link: "/guide/forward-deceleration-tuner" },

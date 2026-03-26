@@ -1,23 +1,27 @@
 # Forward and Lateral Velocity Tuners
 Here's our advice for tuning your robot:
 
-Forward Velocity Tuner
-The forward velocity tuner determines your robot’s maximum forward speed 
-in order to accurately run your robot at its top speed. 
-The robot will run forward for 40 inches, b
-ut this can be changed in the ForwardVelocityTuner.java file. 
-A longer distance is better as it allows the robot to his higher speeds
-
-
-Lateral Velocity Tuner
-The lateral velocity tuner determines your robot’s maximum strafe speed to accurately 
-create paths. The robot will run in the x positive (left) direction for 40 inches but 
-this can be changed in the LateralVelocityTuner.java file. Longer Distances yield 
-better results.
 
 
 
-:::tip
+## Forward Velocity Tuner
+The `ForwardVelocityTuner.java` tuner gives our software an idea of how fast your robot is and how fast
+to run it when following paths. The robot will run 40 inches forwards but this can be changed in the `ForwardVelocityTuner.java` file.
+This is an automatic tuner which will spit out the value at the end. replace the `xVelocity` in the `MecanumConstants.java` file with the value the test spit out.
+**Make sure your motor directions and pod directions are right before running this test!**
+:::info
+Best results are achieved by running this test multiple times and averaging the result. 
+:::
+
+
+## Lateral Velocity Tuner
+The `LateralVelocityTuner.java` tuner gives our software an idea of how fast your robot at strafing and how fast
+to run it when following paths. The robot will run 40 inches to the left but this can be changed in the `ForwardVelocityTuner.java` file.
+This is an automatic tuner which will spit out the value at the end. replace the `yVelocity` in the `MecanumConstants.java` file with the value the test spit out.
+**Make sure your motor directions and pod directions are right before running this test!**
+
+
+:::info
 We recommend using a freshly charged battery for this test
 :::
 
