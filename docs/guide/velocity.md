@@ -9,7 +9,8 @@ The `ForwardVelocityTuner.java` tuner gives our software an idea of how fast you
 to run it when following paths. The robot will run 40 inches forwards but this can be changed in the `ForwardVelocityTuner.java` file.
 This is an automatic tuner which will spit out the value at the end. replace the `xVelocity` in the `MecanumConstants.java` file with the value the test spit out.
 **Make sure your motor directions and pod directions are right before running this test!**
-:::info
+
+:::tip
 Best results are achieved by running this test multiple times and averaging the result. 
 :::
 
@@ -21,7 +22,7 @@ This is an automatic tuner which will spit out the value at the end. replace the
 **Make sure your motor directions and pod directions are right before running this test!**
 
 
-:::info
+:::tip
 We recommend using a freshly charged battery for this test
 :::
 

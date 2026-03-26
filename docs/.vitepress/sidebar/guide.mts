@@ -5,6 +5,7 @@ export default [
     {
         text: "Tuning",
         items: [
+            { text: "Setup", link: "/guide/Setup" },
             { text: "Localization Test", link: "/guide/localization-test" },
             { text: "Velocity Tuners", link: "/guide/velocity" },
             { text: "FeedForward Tuner", link: "/guide/feedforward-tuner" },
