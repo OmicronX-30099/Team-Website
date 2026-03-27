@@ -6,9 +6,9 @@ export default defineConfig({
   title: "ApexPathing Docs",
   description: 'ApexPathing Docs',
   head: [
-    ['link', { rel: 'icon', href: '/Supernova-Docs/images/apex_logo.png' }]
+    ['link', { rel: 'icon', href: '/Team-Website/images/apex_logo.png' }]
   ],
-  base: '/Supernova-Docs/',
+  base: '/Team-Website/',
   themeConfig: {
     nav: [
       { text: 'About', link: '/about' },
