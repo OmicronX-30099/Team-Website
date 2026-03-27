@@ -1,28 +1,12 @@
----
-outline: deep
----
-
-# Our Robot: OmicronX
-
-Explore our 2025-2026 technical design in 3D.
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 
 <ClientOnly>
-  <div class="spline-container">
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@latest/build/spline-viewer.js"></script>
-    <spline-viewer url="https://my.spline.design/untitled-pVYyG8TnDq0tM36l/scene.splinecode"></spline-viewer>
-  </div>
+  <model-viewer>
+    src="/ftc30099/robot.glb" 
+    ar 
+    camera-controls 
+    shadow-intensity="1" 
+    auto-rotate 
+    style="width: 100%; height: 600px; background-color: #eee;">
+  </model-viewer>
 </ClientOnly>
-
-<style>
-  .spline-container {
-    width: 100%;
-    height: 600px;
-    background: #1e1e1e;
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  spline-viewer {
-    width: 100%;
-    height: 100%;
-  }
-</style>
