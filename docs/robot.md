@@ -2,11 +2,24 @@
 outline: deep
 ---
 
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  // This safely loads the script only in the browser
+  if (!document.querySelector('#model-viewer-script')) {
+    const script = document.createElement('script')
+    script.id = 'model-viewer-script'
+    script.type = 'module'
+    script.src = 'https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js'
+    document.head.appendChild(script)
+  }
+})
+</script>
+
 # Our Robot: OmicronX
 
 <ClientOnly>
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
-
   <div class="model-container">
     <model-viewer 
       src="/ftc30099/test.gltf" 
