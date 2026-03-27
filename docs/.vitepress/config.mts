@@ -7,5 +7,12 @@ export default defineConfig({
   description: 'ApexPathing Docs',
   base: '/Team-Website/',
   themeConfig: {
+    nav: [
+      { text: 'Our robot', link: '/robot' }
+    ],
+
+    search: {
+      provider: 'local'
+    }
   },
 })
