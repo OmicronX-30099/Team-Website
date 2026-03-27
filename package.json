@@ -8,8 +8,12 @@
   },
   "devDependencies": {
     "typescript": "latest",
-    "vitepress": "^1.6.4",
+    "vitepress": "latest",
     "vue": "latest",
-    "vitepress-plugin-tabs": "^0.7.3"
+    "vitepress-plugin-tabs": "^0.7.3",
+    "tailwindcss": "latest",
+    "@tailwindcss/vite": "latest",
+    "postcss": "latest",
+    "autoprefixer": "latest"
   }
 }
