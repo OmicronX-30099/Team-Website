@@ -1,44 +1,20 @@
----
-outline: deep
----
-
 <script setup>
 import { onMounted } from 'vue'
-
 onMounted(() => {
-  // This safely loads the script only in the browser
-  if (!document.querySelector('#model-viewer-script')) {
-    const script = document.createElement('script')
-    script.id = 'model-viewer-script'
-    script.type = 'module'
-    script.src = 'https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js'
-    document.head.appendChild(script)
+  if (!document.querySelector('#mv-script')) {
+    const s = document.createElement('script')
+    s.id = 'mv-script'
+    s.type = 'module'
+    s.src = 'https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js'
+    document.head.appendChild(s)
   }
 })
 </script>
 
-# Our Robot: OmicronX
-
 <ClientOnly>
-  <div class="model-container">
-    <model-viewer 
-      src="/ftc30099/test.gltf" 
-      alt="3D model of our FTC Robot"
-      auto-rotate 
-      camera-controls 
-      shadow-intensity="1"
-      touch-action="pan-y"
-      style="width: 100%; height: 600px;">
-    </model-viewer>
-  </div>
+  <model-viewer 
+    src="/test.glb" 
+    ar camera-controls auto-rotate
+    style="width: 100%; height: 600px; background-color: #1a1a1b;">
+  </model-viewer>
 </ClientOnly>
-
-<style>
-  .model-container {
-    background-color: #f0f0f0;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    margin-top: 20px;
-  }
-</style>
