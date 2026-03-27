@@ -2,7 +2,7 @@
 
 <ClientOnly>
   <model-viewer>
-    src="/ftc30099/robot.glb" 
+    src="/ftc30099/test.gltf 
     ar 
     camera-controls 
     shadow-intensity="1" 
