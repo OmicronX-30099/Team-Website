@@ -34,10 +34,18 @@ onMounted(() => {
 
 <style>
   .model-container {
-    background-color: #f0f0f0;
     border-radius: 12px;
     overflow: hidden;
-    border: 1px solid #ddd;
+    border: 1px solid var(--vp-c-divider);
     margin-top: 20px;
+    height: 600px;
+    width: 100%;
+  }
+
+  model-viewer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--vp-c-bg-soft);
+    --poster-color: transparent;
   }
 </style>
