@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "ApexPathing Docs",
-  description: 'ApexPathing Docs',
+  title: "FTC 30099 - OmicronX",
+  description: 'FTC Team 30099 - OmicronX Team Website',
   base: '/Team-Website/',
   themeConfig: {
     nav: [
