@@ -33,19 +33,18 @@ onMounted(() => {
 </ClientOnly>
 
 <style>
-  .model-container {
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--vp-c-divider);
-    margin-top: 20px;
-    height: 600px;
-    width: 100%;
-  }
-
   model-viewer {
     width: 100%;
     height: 100%;
-    background-color: var(--vp-c-bg-soft);
+    background-color: color-mix(in srgb, var(--vp-c-bg-soft), transparent 50%);
     --poster-color: transparent;
+  }
+
+  .model-container {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid color-mix(in srgb, var(--vp-c-divider), transparent);
+    margin-top: 20px;
+    height: 600px;
   }
 </style>
