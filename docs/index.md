@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: "FTC 30099"
-  text: "OmicronX"
+  name: "OmicronX"
+  text: "FTC Team #30099"
   tagline: Building the future of robotics, one connection at a time.
   actions:
     - theme: brand
